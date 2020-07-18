@@ -1,7 +1,4 @@
-let balance;
 let num = [];
-let result = 0;
-let dispData;
 
 function getData(){
 
@@ -29,7 +26,6 @@ dispData.innerHTML = `Balance is: ${num.reduce(reducer)}`
 // Displaying Data
 
 var row = ""
-// row = row + '<tr><td>' + description + '</td><td>' + incomeType + '</td><td>' + amount + '</td></tr>';
 row = `${row}<tr><td>${description}</td><td>${incomeType}</td><td>${amount}</td></tr>`;
 document.getElementById('table-list').innerHTML += row;
 
