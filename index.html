@@ -38,7 +38,7 @@
       <h3 id="balance"></h3>
     <div class="row">
        <!-- The above form looks like this -->
-<form>
+<form id="form-submit">
     <div class="row">
       <div class="six columns">
         <label for="description-text">Description</label>
@@ -54,10 +54,10 @@
       </div>
       <div class="four columns">
         <label for="amount-label">Amount</label>
-        <input class="u-full-width" type="text" placeholder="" id="amount">
+        <input class="u-full-width" type="number" placeholder="" id="amount">
       </div>
     </div>
-    <input class="button-primary" type="button" value="Submit" onclick="getData()">
+    <input class="button-primary" type="reset" value="Submit" onclick="getData()">
   </form>
 
 
