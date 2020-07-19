@@ -49,6 +49,9 @@ function deleteValue() {
     // THIS LINE OF CODE IS USED TO TARGET THE PARENT NODE IN WHICH THE CHILD NODE EVENT IS TAKING PLACE
 
     var td = event.target.parentNode;
+
+    // Calculation and Back Calculation
+    
     var removeAmount = parseInt(td.previousSibling.innerHTML);
     var typeoFIncome = (td.previousSibling.previousSibling.innerHTML);
     var table = document.getElementById('table-list');
@@ -58,6 +61,9 @@ function deleteValue() {
     } else {
         dispData.innerHTML = `Balance is: ${num.reduce(reducer)-removeAmount}`
     }
+
+
+    // Checking if the table is empty
 
     if (table.rows.length === 1) {
         dispData.innerHTML = `Balance is: ${num = []}`
